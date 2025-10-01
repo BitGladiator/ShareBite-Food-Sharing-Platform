@@ -6,6 +6,7 @@ import RecipientAuth from './pages/sign-up/RecipientAuth'
 import DonorDashboard from './pages/Dashboards/DonorDashboard'
 import NewDonation from './pages/Forms/NewDonation'
 import SchedulePickup from './pages/Forms/SchedulePickup'
+import ViewRecipients from './pages/Forms/ViewRecipients'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
       <Route path='/donor-dash' element={<DonorDashboard/>}/>
       <Route path='/donor-form' element={<NewDonation/>}/>
       <Route path='/schedule-pick' element={<SchedulePickup/>}/>
+      <Route path='/view-recp' element={<ViewRecipients/>}/>
       </Routes>
     </>
   )

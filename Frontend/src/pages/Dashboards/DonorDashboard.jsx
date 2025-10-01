@@ -119,7 +119,7 @@ const DonorDashboard = () => {
       </header>
 
       {/* Navigation */}
-      <nav className="bg-white border-b border-gray-200">
+      {/* <nav className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex space-x-8">
             {[
@@ -142,7 +142,7 @@ const DonorDashboard = () => {
             ))}
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -197,7 +197,7 @@ const DonorDashboard = () => {
               <Calendar className="w-5 h-5" />
               <span>Schedule Pickup</span>
             </button>
-            <button className="flex items-center space-x-2 border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+            <button onClick={()=>navigate('/view-recp')} className="flex items-center space-x-2 border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors duration-200">
               <Users className="w-5 h-5" />
               <span>View Recipients</span>
             </button>
